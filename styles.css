@@ -46,6 +46,7 @@ h2{
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   box-sizing: border-box;
+  gap: 10px;
 }
 .site-nav{
   margin: 0 20px;
