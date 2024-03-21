@@ -17,7 +17,7 @@ li{
 
 /* base styles */
 body{
-  background: var(--secondary);
+  background: #eef2ed;
   overflow-x: hidden;
   font-family: 'Rubik Regular';
 }
@@ -41,7 +41,7 @@ input,textarea{
   padding: 10px 16px;
   border-radius: 20px;
   border: 2px solid #9893D8;
-  color: --textcolor;
+  color: var(--textcolor);
   font-size: 1em;
 }
 
@@ -51,12 +51,12 @@ input,textarea{
   src: url("assets/fonts/Rubik-Regular.ttf") format("ttf"),
 }
 h1,h2,h3,h4{
-  color: #DDDBFF;
+  color: #4d4f4d;
   font-weight: normal;
   line-height: 1.4em;
 }
 p,a,li{
-  color: #9893D8;
+  color: #4d4f4d;
   line-height: 1.4em;
   font-size: 1em;
 }
@@ -133,7 +133,7 @@ h4{
   align-self: center;
 }
 .projects h4{
-  color: #9994f7
+  color: #4d4f4d
 }
 #contact{
   padding: 30px 20px;
