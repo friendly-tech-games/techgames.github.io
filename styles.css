@@ -69,8 +69,6 @@ h4{
 }
 #welcome{
   padding: 0 20px 20px 20px;
-}
-.welcome-text{
   font-size: 1.1em;
 }
 #portfolio{
@@ -161,12 +159,10 @@ footer .copyright{
   .site-nav h1{
     grid-column: 3/5;
   }
-  .welcome-text{
-    grid-column: 1/5;
-    align-self: center;
-  }
   #welcome{
     padding-bottom: 40px;
+        grid-column: 1/5;
+    align-self: center;
   }
   .projects a:nth-child(1){
     grid-column: 2/4;
