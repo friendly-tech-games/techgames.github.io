@@ -1,7 +1,8 @@
 /* variables */
 :root{
-  --primary: #dbde1b;
-  --secondary: #24de1b;
+  --primary: #24de1b;
+  --secondary: #dbde1b;
+  --textcolor: #52524c;
 }
 
 /* reset */
@@ -40,7 +41,7 @@ input,textarea{
   padding: 10px 16px;
   border-radius: 20px;
   border: 2px solid #9893D8;
-  color: #f2f2f2;
+  color: --textcolor;
   font-size: 1em;
 }
 
