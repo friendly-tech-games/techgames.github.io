@@ -86,10 +86,10 @@ h4{
 .site-nav img{
   grid-column: 1/2;
   grid-row: 1;
+  width: 100px;
 }
 .site-nav h1{
   grid-column: 3/6;
-  grid-row: 1;
   padding-bottom: 10px;
   border-bottom: 3px solid var(--primary);
   display: inline-block;
@@ -240,15 +240,14 @@ footer img{
   .site-nav img{
     grid-column: 1/2;
     grid-row: 1;
+     width: 200px;
   }
   .site-nav h1{
     grid-column: 3/5;
-    grid-row: 1;
   }
   .site-nav ul{
     display: flex;
     grid-column: 6/9;
-    grid-row: 1;
     justify-content: flex-end;
     align-self: center;
   }
