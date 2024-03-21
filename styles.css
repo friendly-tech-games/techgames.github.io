@@ -20,14 +20,10 @@ li{
 body{
   background: var(--background);
   overflow-x: hidden;
-  font-family: 'Rubik Regular';
+  font-family: 'Courier New', monospace;;
 }
 
 /* fonts */
-@font-face {
-  font-family: 'Rubik Regular';
-  src: url("assets/fonts/Rubik-Regular.ttf") format("ttf"),
-}
 h1,h2,h3,h4{
   color: var(--textcolor);
   font-weight: normal;
