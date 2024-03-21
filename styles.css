@@ -51,7 +51,6 @@ h4{
 .grid{
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  gap: 10px;
   box-sizing: border-box;
 }
 .site-nav{
@@ -60,7 +59,7 @@ h4{
 .site-nav img{
   grid-column: 1/4;
   grid-row: 1;
-  width: 25%;
+  width: 100%;
   max-width:300px;
 }
 .site-nav h1{
