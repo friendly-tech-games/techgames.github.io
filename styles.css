@@ -60,7 +60,8 @@ h4{
 .site-nav img{
   grid-column: 1/4;
   grid-row: 1;
-  width: 100px;
+  width: 25%;
+  max-width:300px;
 }
 .site-nav h1{
   grid-column: 5/9;
