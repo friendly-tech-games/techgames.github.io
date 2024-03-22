@@ -80,6 +80,8 @@ h2{
 .projects a{
   grid-column: 1/9;
   margin: 20px 0
+  max-width: 80%;
+  border-style: solid;
   align-self: center;
   text-align: center;
 }
