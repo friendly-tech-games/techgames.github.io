@@ -2,7 +2,7 @@
 :root{
   --green: #24de1b; /* Green */
   --yellow: #d4de1b; /* yellow */ 
-  --background: #eef2ed; /*Background White */
+  --background: #fafbfc; /*Background White */
   --textcolor: #52524c; /* Grey */
 }
 
@@ -104,9 +104,6 @@ h2{
   width: 100%;
   height: 100%;
 }
-footer{
-  background-color: var(--green);
-}
 
 
 /* small tablet styles */
@@ -191,8 +188,5 @@ footer{
   }
   .projects a:nth-child(3){
     grid-column: 7/9;
-  }
-  footer .copyright{
-    grid-column: 1/4;
   }
 }
