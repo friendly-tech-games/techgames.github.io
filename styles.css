@@ -22,6 +22,12 @@ body{
   overflow-x: hidden;
   font-family: 'Courier New', monospace;;
 }
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;  
+}
 
 /* fonts */
 h1,h2{
@@ -78,11 +84,11 @@ h2{
 }
 .projects img{
   grid-column: span 2;
-  display: block;
   width: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: solid;
+}
+.non-tech-projects img{
+  grid-column: span 6;
+  width: 100px;
 }
 #contact{
   background: var(--yellow);
