@@ -79,8 +79,9 @@ h2{
 }
 .projects img{
   grid-column: 1/9;
-  margin: 20px 0
+  margin: 20px 0;
   max-width: 80%;
+  width: 200px;
   border-style: solid;
   align-self: center;
   text-align: center;
