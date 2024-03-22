@@ -77,7 +77,7 @@ h2{
 .projects{
   margin: 20px 0;
 }
-.projects a{
+.projects img{
   grid-column: 1/9;
   margin: 20px 0
   max-width: 80%;
