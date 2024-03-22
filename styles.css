@@ -28,6 +28,30 @@ img{
   margin-right: auto;
   border-style: solid;  
 }
+@font-face {
+  font-family:"keyboard";
+  src: url("212 Keyboard.oft") format("truetype");
+}
+@font-face {
+  font-family:"scrabble";
+  src: url("Scrabbles.ttf") format("truetype");
+}
+@font-face {
+  font-family:"mechanical";
+  src: url("Mechanical.ttf") format("truetype");
+}
+@font-face {
+  font-family:"counb";
+  src: url("COUNB__.TTF") format("truetype");
+}
+@font-face {
+  font-family:"crank";
+  src: url("GCRANK.TTF") format("truetype");
+}
+@font-face {
+  font-family:"meccano";
+  src: url("Meccano Font.ttf") format("truetype");
+}
 
 /* fonts */
 h1,h2{
