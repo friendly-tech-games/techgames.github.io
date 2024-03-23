@@ -22,12 +22,7 @@ body{
   overflow-x: hidden;
   font-family: 'Courier New', monospace;;
 }
-img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: solid;  
-}
+
 @font-face {
   font-family:"keyboard";
   src: url("212 Keyboard Functions.otf") format("truetype");
@@ -129,14 +124,17 @@ h2{
 .projects img{
   grid-column: span 2;
   width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;  
 }
-.non-tech-projects p{
+.non-tech p{
   grid-column: span 6;
   text-align: center;
 }
 .non-tech-projects img{
   grid-column: span 6;
-  width: 100px;
 }
 #contact{
   background: var(--yellow);
