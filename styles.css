@@ -1,6 +1,6 @@
 /* variables */
 :root{
-  --green: #24de1b; /* Green */
+  --green: #72de1bff; /* Green */
   --yellow: #d4de1b; /* yellow */ 
   --background: #fafbfc; /*Background White */
   --textcolor: #52524c; /* Grey */
@@ -108,7 +108,7 @@ h2{
   text-align: left;
   font-family:meccano;
   font-weight:bold;
-  background: linear-gradient(to left, green, yellow);
+  background: linear-gradient(to left, var(--green), var(--yellow));
   -webkit-background-clip: text;
   color: transparent;
 }
