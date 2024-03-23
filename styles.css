@@ -30,7 +30,7 @@ img{
 }
 @font-face {
   font-family:"keyboard";
-  src: url("212 Keyboard.oft") format("truetype");
+  src: url("212 Keyboard.otf") format("truetype");
 }
 @font-face {
   font-family:"scrabble";
@@ -42,7 +42,7 @@ img{
 }
 @font-face {
   font-family:"counb";
-  src: url("COUNB__.TTF") format("truetype");
+  src: url("COUNB___.TTF") format("truetype");
 }
 @font-face {
   font-family:"crank";
@@ -58,7 +58,7 @@ img{
 }
 @font-face {
   font-family:"steampunk";
-  src: url("SteampunkMachineryFont-Regular.tff") format("truetype");
+  src: url("SteampunkMachineryFont-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family:"wood";
