@@ -64,6 +64,14 @@ img{
   font-family:"wood";
   src: url("Wood Shapes.ttf") format("truetype");
 }
+@font-face {
+  font-family:"cable";
+  src: url("Cables.ttf") format("truetype");
+}
+@font-face {
+  font-family:"key";
+  src: url("Betsy Flanagan.otf") format("truetype");
+}
 
 /* fonts */
 h1,h2{
