@@ -53,7 +53,13 @@ body{
 }
 
 /* fonts */
-h1,h2{
+h1{
+  color: var(--textcolor);
+  font-weight: normal;
+  line-height: 1.6em;
+  font-size: 2em;
+}
+h2{
   color: var(--textcolor);
   font-weight: normal;
   line-height: 1.4em;
@@ -123,7 +129,7 @@ h2{
   text-align: center;
 }
 .non-tech-projects img{
-  grid-column: span 6;
+  grid-column: 3/5;
 }
 #contact{
   background: var(--yellow);
