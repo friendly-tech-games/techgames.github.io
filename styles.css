@@ -28,14 +28,14 @@ li{
 body{
   background: var(--background);
   overflow-x: hidden;
- font-family:oxanium
+  font-family:oxanium
 }
 
 /* fonts */
 h1{
   color: var(--textcolor);
   font-weight: normal;
-  font-size: 3em;
+  font-size: 100px;
 }
 h2{
   color: var(--textcolor);
