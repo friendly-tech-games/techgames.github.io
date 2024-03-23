@@ -52,6 +52,22 @@ img{
   font-family:"meccano";
   src: url("Meccano Font.ttf") format("truetype");
 }
+@font-face {
+  font-family:"square";
+  src: url("SQUAREKI.TTF") format("truetype");
+}
+@font-face {
+  font-family:"square";
+  src: url("SQUAREKI.TTF") format("truetype");
+}
+@font-face {
+  font-family:"steampunk";
+  src: url("SteampunkMachineryFont-Regular.tff") format("truetype");
+}
+@font-face {
+  font-family:"wood";
+  src: url("Wood Shapes.ttf") format("truetype");
+}
 
 /* fonts */
 h1,h2{
