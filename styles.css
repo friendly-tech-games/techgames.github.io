@@ -17,11 +17,6 @@ li{
 }
 
 /* base styles */
-body{
-  background: var(--background);
-  overflow-x: hidden;
- font-family:oxanium
-}
 @font-face {
   font-family:"meccano";
   src: url("Meccano Font.ttf") format("truetype");
@@ -30,13 +25,17 @@ body{
   font-family:"oxanium";
   src: url("Oxanium-Regular.ttf") format("truetype");
 }
+body{
+  background: var(--background);
+  overflow-x: hidden;
+ font-family:oxanium
+}
 
 /* fonts */
 h1{
   color: var(--textcolor);
   font-weight: normal;
-  line-height: 1.6em;
-  font-size: 2em;
+  font-size: 3em;
 }
 h2{
   color: var(--textcolor);
@@ -107,7 +106,7 @@ h2{
   grid-column: span 6;
   text-align: center;
 }
-.non-tech-projects img{
+.non-tech img{
   grid-column: 3/5;
 }
 #contact{
