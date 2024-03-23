@@ -19,11 +19,11 @@ li{
 /* base styles */
 @font-face {
   font-family:"meccano";
-  src: url("Meccano Font.ttf") format("truetype");
+  src: url("assets/fonts/Meccano Font.ttf") format("truetype");
 }
 @font-face {
   font-family:"oxanium";
-  src: url("Oxanium-Regular.ttf") format("truetype");
+  src: url("assets/fonts/Oxanium-Regular.ttf") format("truetype");
 }
 body{
   background: var(--background);
@@ -35,7 +35,7 @@ body{
 h1{
   color: var(--textcolor);
   font-weight: normal;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 h2{
   color: var(--textcolor);
@@ -60,7 +60,7 @@ p,a,li{
   gap: 10px;
 }
 .title{
-  margin: 0 20px;
+  margin: 0 10px;
 }
 .title img{
   grid-column: span 2;
