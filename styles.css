@@ -20,36 +20,15 @@ li{
 body{
   background: var(--background);
   overflow-x: hidden;
-  font-family: 'Courier New', monospace;;
+ font-family:oxanium
 }
 @font-face {
   font-family:"meccano";
   src: url("Meccano Font.ttf") format("truetype");
 }
-
-@font-face {
-  font-family:"RNS";
-  src: url("RNS-S___.TTF") format("truetype");
-}
-@font-face {
-  font-family:"zekton";
-  src: url("zekton rg.otf") format("truetype");
-}
 @font-face {
   font-family:"oxanium";
   src: url("Oxanium-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family:"lazensmooth";
-  src: url("LazenbyCompSmooth.ttf") format("truetype");
-}
-@font-face {
-  font-family:"lazenliquid";
-  src: url("LazenbyCompLiquid.ttf") format("truetype");
-}
-@font-face {
-  font-family:"army";
-  src: url("GiantRobotArmy-Medium.ttf") format("truetype");
 }
 
 /* fonts */
