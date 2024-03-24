@@ -40,11 +40,6 @@ h1{
 h2{
   color: var(--textcolor);
   font-weight: normal;
-  line-height: 1.7em;
-}
-h2{
-  color: var(--textcolor);
-  font-weight: normal;
   line-height: 1.4em;
 }
 p,a,li{
@@ -92,19 +87,13 @@ p,a,li{
   margin: 20px 0;
 }
 .projects img{
-  grid-column: span 2;
-  width: 100%;
+  grid-column: span 3;
+  width: 150px;
+  height: 210px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-style: solid;  
-}
-.non-tech p{
-  grid-column: span 6;
-  text-align: center;
-}
-.non-tech img{
-  grid-column: 3/5;
 }
 #contact{
   background: var(--yellow);
@@ -123,11 +112,12 @@ p,a,li{
   left: 0;
   width: 100%;
   height: 100%;
+
 }
 
 
 /* small tablet styles */
-@media screen and (min-width: 620px){
+@media screen and (min-width: 600px){
 
   #contact{
     padding-bottom: 140%;/* Adjust based on your form's height */
@@ -135,22 +125,28 @@ p,a,li{
   .title h1{
     font-size: 400%;
   }
+  h2{
+    font-size:2em;
+  }
   p{
-    font-size: 0.9em;
+    font-size: 1.2em;
     text-align: center;
   }
 }
 
 /* large tablet & laptop styles */
-@media screen and (min-width: 960px){
+@media screen and (min-width: 900px){
   #contact{
     padding-bottom: 90%;/* Adjust based on your form's height */
   }
   .title h1{
     font-size: 600%;
   }
+  h2{
+    font-size:2.4em;
+  }
   p{
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
   .projects img:nth-child(1){
     grid-column: 2/3;
@@ -161,15 +157,27 @@ p,a,li{
   .projects img:nth-child(3){
     grid-column: 4/5;
   }
-  .projects mg:nth-child(4){
+  .projects img:nth-child(4){
     grid-column: 5/6;
-  }
-  .non-tech p{
-    display: none;
   }
 }
 
 /* desktop styles */
 @media screen and (min-width: 1200px){
-
+  #contact{
+    padding-bottom: 70%;/* Adjust based on your form's height */
+  }
+  .title h1{
+    font-size:7em;
+  }
+  h2{
+    font-size:3.4em;
+  }
+  p{
+    font-size: 1.8em;
+  }
+  .projects img{
+    width: 250px;
+    height: 375px;
+  }
 }
