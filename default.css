@@ -54,7 +54,12 @@ p{
 }
 
 img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 5px;
-  margin: auto;
-  border-color: grey;
+}
+
+footer {
+  background-color: var(--yellow);
 }
