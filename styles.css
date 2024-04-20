@@ -17,6 +17,7 @@ li{
 }
 
 /* base styles */
+/* default fonts */
 @font-face {
   font-family:"meccano";
   src: url("assets/fonts/Meccano Font.ttf") format("truetype");
@@ -25,6 +26,21 @@ li{
   font-family:"oxanium";
   src: url("assets/fonts/Oxanium-Regular.ttf") format("truetype");
 }
+
+/*siteseeing fonts*/
+@font-face {
+  font-family:"lobster";
+  src: url("siteseeing/assets/fonts/Lobster-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family:"lobster-two";
+  src: url("siteseeing/assets/fonts/LobsterTwo-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family:"orbitron";
+  src: url("siteseeing/assets/fonts/Orbitron-VariableFont_wght.ttf") format("truetype");
+}
+
 body{
   background: var(--background);
   overflow-x: hidden;
