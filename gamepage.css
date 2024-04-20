@@ -1,0 +1,64 @@
+/*siteseeing fonts*/
+@font-face {
+    font-family:"lobster";
+    src: url("siteseeing/assets/fonts/Lobster-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family:"lobster-two";
+    src: url("siteseeing/assets/fonts/LobsterTwo-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family:"orbitron";
+    src: url("siteseeing/assets/fonts/Orbitron-VariableFont_wght.ttf") format("truetype");
+  }
+
+/* mobile styles */
+  
+  .gamethumbnail img{
+    grid-column: 1/2;
+    width: 50px;
+    height: 10px;
+  }
+  
+  .homeicon img{
+    grid-column: 6/7;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .gamebio h1{
+    grid-column: 3/7;
+  }
+  
+  .gamebio table{
+    grid-column: 1/7;
+  }
+  
+  .gamebio p{
+    grid-column: 1/7;
+    margin: 5px;
+  }
+  
+  .demo h2, p{
+    text-align: center;
+  }
+  
+  .demo iframe{
+    display:none;
+    margin:auto;
+  }
+  
+  /* small tablet styles */
+  @media screen and (min-width: 600px){
+
+  }
+  
+  /* large tablet & laptop styles */
+  @media screen and (min-width: 900px){
+
+  }
+  
+  /* desktop styles */
+  @media screen and (min-width: 1200px){
+
+  }

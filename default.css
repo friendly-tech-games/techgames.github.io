@@ -1,0 +1,60 @@
+/* variables */
+:root{
+  --green: #72de1bff; /* Green */
+  --yellow: #d4de1b; /* yellow */ 
+  --background: #fafbfc; /*Background White */
+  --textcolor: #52524c; /* Grey */
+}
+
+/* reset */
+body,p,a,ul,li{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+
+/* base styles */
+@font-face {
+  font-family:"meccano";
+  src: url("assets/fonts/Meccano Font.ttf") format("truetype");
+}
+@font-face {
+  font-family:"oxanium";
+  src: url("assets/fonts/Oxanium-Regular.ttf") format("truetype");
+}
+
+body{
+  background: var(--background);
+  overflow-x: hidden;
+  font-family:oxanium;
+}
+
+h1{
+  color: var(--textcolor);
+  font-weight: normal;
+  font-size: 2em;
+  padding: 5px;
+  text-align: center;
+}
+h2{
+  color: var(--textcolor);
+  font-weight: normal;
+  line-height: 1.4em;
+  padding: 5px;
+  text-align: center;
+}
+p{
+  color: var(--textcolor);
+  font-size: 1em;
+  padding: 5px;
+  text-align: center;
+}
+
+img{
+  padding: 5px;
+  margin: auto;
+  border-color: grey;
+}
