@@ -53,6 +53,10 @@ img{
   width: 100px;
 }
 
+table {
+  margin: auto;
+}
+
 footer {
   background-color: var(--yellow);
 }
