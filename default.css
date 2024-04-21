@@ -31,15 +31,7 @@ body{
   overflow-x: hidden;
   font-family:oxanium;
 }
-
 h1{
-  color: var(--textcolor);
-  font-weight: normal;
-  font-size: 2em;
-  padding: 5px;
-  text-align: center;
-}
-h2{
   color: var(--textcolor);
   font-weight: normal;
   line-height: 1.4em;
@@ -55,11 +47,20 @@ p{
 
 img{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   padding: 5px;
 }
 
 footer {
   background-color: var(--yellow);
+}
+
+@media screen and (min-width: 600px){
+  h1 {
+    font-size : 3em;
+  }
+
+  p {
+    font-size : 2em; 
+  }
 }
