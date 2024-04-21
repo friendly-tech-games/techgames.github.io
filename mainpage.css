@@ -39,6 +39,10 @@
 
 .game {
   width: 100px;
+  height: 150px;
+  padding: 0px;
+  margin-bottom: 5px;
+  border:2px solid var(--picture-frame);
 }
 
 #contact.grid {
@@ -108,11 +112,13 @@
   
   .game {
     width: 150px;
+    height: 225px;
   }
 }
 
 @media screen and (min-width: 900px){
   .game {
     width: 200px;
+    height: 300px;
   }
 }
