@@ -1,0 +1,12 @@
+@font-face {
+    font-family:"lobster";
+    src: url("siteseeing/assets/fonts/Lobster-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family:"lobster-two";
+  src: url("siteseeing/assets/fonts/LobsterTwo-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family:"orbitron";
+  src: url("siteseeing/assets/fonts/Orbitron-VariableFont_wght.ttf") format("truetype");
+}
