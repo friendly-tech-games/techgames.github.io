@@ -1,0 +1,139 @@
+#gamebio.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, auto);
+}
+
+#homeicon {
+  grid-row: 1;
+  grid-column: 1/1;
+  width: 30px;
+  margin: auto;
+}
+
+#title {
+  grid-row: 2;
+  grid-column: 2/5;
+  margin: 0px;
+}
+
+#gamethumbnail {
+  grid-row: 3;
+  grid-column: 2/5;
+  width: 100%;
+}
+
+#gameinfo {
+  grid-row: 4;
+  grid-column: 2/5;
+}
+
+.gameinfo-img img{
+  width: 30px;
+  height: 30px;
+  margin-right: 0;
+}
+
+.gameinfo-text{
+  text-align: left;
+}
+
+#gamebio p {
+  grid-row: 5;
+  grid-column: 1/6;
+}
+
+#gameplay-photos img{
+  width: 200px;
+  height: 120px;
+}
+
+.demo iframe{
+  display: none;
+}
+
+/* small tablet styles */
+@media screen and (min-width: 450px){
+  #gameplay-photos.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);    
+  }
+
+  #gameplay-3 {
+    grid-row: 2;
+    grid-column: 1/3;   
+  }
+
+  #gameplay-photos img{
+    width: 250px;
+    height: 150px;
+  }
+
+  .gameinfo-img img{
+    width: 40px;
+    height: 40px;
+  }
+
+  #homeicon {
+    width: 50px;
+  }
+
+}
+
+/* large tablet & laptop styles */
+@media screen and (min-width: 900px){
+  #homeicon {
+    width: 80px;
+  }
+
+  #gamethumbnail {
+    grid-row: 3;
+    grid-column: 2/4;
+    width: 100%;
+  }
+  
+  #gameinfo {
+    grid-row: 3;
+    grid-column: 4/6;
+    margin-right: 40%;
+  }
+
+  #overview{
+    margin-top: 20px;
+  }
+
+  #gameplay-photos.grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto);    
+  }
+
+  #gameplay-3 {
+    grid-row: 1;
+    grid-column: 2/3;   
+  }
+
+  #gameplay-photos img{
+    width: 300px;
+    height: 180px;
+  }
+
+  .demo iframe{
+    display: block;
+    width: 680;
+    height: 340;
+    margin: auto;
+  }
+
+  .demo p{
+    display: none;
+  }
+}
+
+/* desktop styles */
+@media screen and (min-width: 1050px){
+  .gameinfo-img img{
+    width: 60px;
+    height: 60px;
+  }  
+}
