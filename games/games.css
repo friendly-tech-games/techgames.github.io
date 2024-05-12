@@ -94,6 +94,9 @@
   #homeicon {
     width: 50px;
   }
+  #homeicon:hover{
+    animation: wiggle 2s infinite;
+  }
 
 }
 
