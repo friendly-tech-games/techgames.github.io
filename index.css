@@ -8,7 +8,7 @@
   grid-column: 1 / 2;
   grid-row: 1;
   width: 100%;
-  animation: rotation 2s 1 ease-in-out;
+  animation: rotation 1s 1 ease-in-out;
 }
 
 @keyframes rotation {
@@ -23,10 +23,22 @@
 #intro.grid h1{
   grid-column: 2 / 6;
   grid-row: 1;
-  text-align: center;
+  text-align: left;
   font-family:meccano;
   font-weight:bold;
   color: #97978b;
+  animation: reveal 0.5s ease-out forwards;
+  display: block;
+  animation-delay: 0.9s;
+}
+
+@keyframes reveal {
+  0% {
+    transform: translate(0,0);
+  }
+  100% {
+    transform: translate(10%,0);
+  }
 }
 
 #intro.grid p{
@@ -98,7 +110,6 @@ img.game:hover{
   
   #intro.grid h1{
     grid-column: 3 / 5;
-    margin: auto;
   }    
   
   .game {
