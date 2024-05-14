@@ -91,6 +91,24 @@ table {
   margin: auto;
 }
 
+button {
+  background-color: var(--yellow); /* Green */
+  border: solid 4px;
+  border-color: var(--green);
+  color: var(--textcolor);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 1em;
+  margin: auto;
+  border-radius: 12px;
+}
+
+button:hover{
+  background-color: #d9df72;
+}
+
 @media screen and (min-width: 380px){
   h1{
     font-size : 3em;
@@ -106,7 +124,7 @@ table {
     font-size : 3em;
   }
 
-  p {
+  p, button {
     font-size : 2em; 
   }
 }
