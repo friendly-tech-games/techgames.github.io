@@ -85,6 +85,7 @@ img{
   margin: auto;
   padding: 5px;
   width: 100px;
+  border-radius: 12px;
 }
 
 table {
@@ -107,6 +108,10 @@ button {
 
 button:hover{
   background-color: #d9df72;
+}
+
+iframe {
+  border-radius: 12px;
 }
 
 @media screen and (min-width: 380px){

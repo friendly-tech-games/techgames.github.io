@@ -39,9 +39,18 @@
   text-align: left;
 }
 
-#gamebio p {
-  grid-row: 5;
-  grid-column: 1/6;
+#overview.grid {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: repeat(2, auto);
+  margin: 10px;
+}
+
+#overview.grid p{
+  grid-column: 2/3;
+  background-color: #fafbfc;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #gameplay-photos img{
@@ -97,11 +106,6 @@
 
   #gamethumbnail {
     max-width: 350px;
-  }
-
-
-  #overview{
-    margin-top: 20px;
   }
 
   #gameplay-photos.grid {
