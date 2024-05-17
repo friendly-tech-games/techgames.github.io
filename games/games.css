@@ -4,13 +4,6 @@
   grid-template-rows: repeat(5, auto);
 }
 
-#homeicon {
-  grid-row: 1;
-  grid-column: 1/1;
-  width: 30px;
-  margin: auto;
-}
-
 #title {
   grid-row: 2;
   grid-column: 4/5;
@@ -89,20 +82,10 @@
     height: 40px;
   }
 
-  #homeicon {
-    width: 50px;
-  }
-  #homeicon:hover{
-    animation: wiggle 2s infinite;
-  }
-
 }
 
 /* large tablet & laptop styles */
 @media screen and (min-width: 900px){
-  #homeicon {
-    width: 80px;
-  }
 
   #gamethumbnail {
     max-width: 350px;
