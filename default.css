@@ -117,12 +117,53 @@ iframe {
 #homeicon {
   grid-row: 1;
   grid-column: 1/1;
-  width: 30px;
+  width: 25px;
+}
+
+#homeicon_link {
+  padding: 5px;
   margin: auto;
 }
 
-#homeicon:hover{
-  animation: wiggle 2s infinite;
+/*nav bar*/
+
+.nav ul{
+  list-style-type: none;
+  background-color: var(--textcolor);
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.nav a{
+  color: var(--background);
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+.nav a:hover{
+  background-color: var(--yellow);
+  color: var(--textcolor)
+}
+
+.nav li{
+  float: left;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 @media screen and (min-width: 380px){
@@ -131,11 +172,6 @@ iframe {
   }
 }
 
-@media screen and (min-width: 450px){
-  #homeicon {
-    width: 50px;
-  }
-}
 
 @media screen and (min-width: 600px){
   h1{
@@ -154,11 +190,5 @@ iframe {
 @media screen and (min-width: 750px){
   h1{
     font-size : 4.5em;
-  }
-}
-
-@media screen and (min-width: 900px){
-  #homeicon {
-    width: 80px;
   }
 }
