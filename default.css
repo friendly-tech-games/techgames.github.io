@@ -117,12 +117,12 @@ iframe {
 #homeicon {
   grid-row: 1;
   grid-column: 1/1;
-  width: 30px;
-  margin: auto;
+  width: 25px;
 }
 
-#homeicon:hover{
-  animation: wiggle 2s infinite;
+#homeicon_link {
+  padding: 5px;
+  margin: auto;
 }
 
 /*nav bar*/
@@ -172,11 +172,6 @@ iframe {
   }
 }
 
-@media screen and (min-width: 450px){
-  #homeicon {
-    width: 50px;
-  }
-}
 
 @media screen and (min-width: 600px){
   h1{
@@ -195,11 +190,5 @@ iframe {
 @media screen and (min-width: 750px){
   h1{
     font-size : 4.5em;
-  }
-}
-
-@media screen and (min-width: 900px){
-  #homeicon {
-    width: 80px;
   }
 }
