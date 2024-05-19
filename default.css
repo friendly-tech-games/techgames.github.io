@@ -75,7 +75,7 @@ h1 {
 
 p{
   color: var(--textcolor);
-  font-size: 1em;
+  font-size: 16px;
   padding: 5px;
   text-align: center;
 }
@@ -183,7 +183,7 @@ iframe {
   }
 
   p, button {
-    font-size : 2em; 
+    font-size : 24px; 
   }
 }
 

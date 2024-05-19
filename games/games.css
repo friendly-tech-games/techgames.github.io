@@ -15,6 +15,9 @@
   grid-row: 2;
   grid-column: 2/4;
   width: 100%;
+  padding: 0px;
+  margin: 5px;
+  border:2px solid var(--picture-frame);
 }
 
 #gameinfo {
@@ -89,6 +92,9 @@
 
   #gamethumbnail {
     max-width: 350px;
+    margin: auto;
+    margin-top: 5px;
+    margin-right: 0;
   }
 
   #gameplay-photos.grid {
