@@ -73,13 +73,16 @@ h1 {
   font-size: 2em;
 }
 
-p{
+p, li{
   color: var(--textcolor);
   padding: 5px;
+}
+
+p {
   text-align: center;
 }
 
-a, p, button {
+a, p, button, li {
   font-size: 16px,
 }
 
@@ -190,7 +193,7 @@ iframe {
     font-size : 3em;
   }
 
-  a, p, button {
+  a, p, button, li {
     font-size : 24px; 
   }
 }

@@ -52,6 +52,14 @@
   list-style-type:circle;
 }
 
+.game-layout img {
+  width:160px;
+  height: 160px;
+  border:2px solid var(--picture-frame);
+  padding: 0px;
+  margin-bottom: 5px;
+}
+
 #gameplay-photos img{
   width: 200px;
   height: 120px;
@@ -88,7 +96,13 @@
     height: 40px;
   }
 
+  .game-layout img {
+    width:300px;
+    height: 300px;
+  }
+
 }
+
 
 /* large tablet & laptop styles */
 @media screen and (min-width: 900px){
@@ -112,7 +126,7 @@
 
   #gameplay-photos img{
     width: 300px;
-    height: 180px;
+    height: 300px;
   }
 
   .demo iframe{
@@ -124,6 +138,16 @@
 
   .demo p{
     display: none;
+  }
+
+  .game-layout img {
+    display: inline-block;
+  }
+
+  #learn-more-images {
+    margin: auto;
+    padding: 10%;
+    width: 100%;
   }
 }
 
