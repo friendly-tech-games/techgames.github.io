@@ -145,9 +145,7 @@
   }
 
   #learn-more-images {
-    margin: auto;
-    padding: 10%;
-    width: 100%;
+    text-align:center;
   }
 }
 
