@@ -14,8 +14,8 @@ html, body {
 
 body {
   background: linear-gradient(-45deg, var(--green), var(--background), var(--yellow));
-  background-size: 400% 400%;
-  animation: gradient 20s ease infinite;
+  background-size: 500% 500%;
+  animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
@@ -175,6 +175,7 @@ iframe {
   background-color: #fafbfc;
   border-radius: 12px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px;
 }
 
 @media screen and (min-width: 380px){
