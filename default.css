@@ -65,12 +65,12 @@ body{
 h1, h2{
   color: var(--textcolor);
   font-weight: normal;
-  line-height: 1.4em;
+  line-height: 24px;
   padding: 5px;
   text-align: center;
 }
 h1 {
-  font-size: 2em;
+  font-size: 32px;
 }
 
 p, li{
@@ -83,7 +83,7 @@ p {
 }
 
 a, p, button, li {
-  font-size: 16px,
+  font-size: 16px;
 }
 
 img{
@@ -176,8 +176,59 @@ iframe {
   display: block;
 }
 
+.content a:hover{
+  background-color: var(--yellow);
+  color: var(--textcolor)
+}
+
+/*Drop down*/
+#about_link, .collapsible {
+  background-color: var(--textcolor);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+#about_link {
+  text-align: center;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.nav.collapsible {
+  background-color: var(--textcolor);
+}
+
+.nav.collapsible:hover {
+  background-color: var(--yellow);
+  color: var(--textcolor)
+}
+
+.content a{
+  background-color: var(--textcolor);
+  margin: 5px;
+}
+
+.content {
+  padding: 0 18px;
+  background-color: var(--background);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/*Containers*/
+
 .container {
-  background-color: #fafbfc;
+  background-color: rgba(250, 251, 252, 0.6);
   border-radius: 12px;
   box-shadow: inset gray 0px 0px 20px -12px, 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 10px;
@@ -185,31 +236,4 @@ iframe {
 
 .image-depth {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-@media screen and (min-width: 380px){
-  h1{
-    font-size : 3em;
-  }
-}
-
-
-@media screen and (min-width: 600px){
-  h1{
-    font-size : 4em;
-  }
-  
-  h2 {
-    font-size : 3em;
-  }
-
-  a, p, button, li {
-    font-size : 24px; 
-  }
-}
-
-@media screen and (min-width: 750px){
-  h1{
-    font-size : 4.5em;
-  }
 }

@@ -51,11 +51,10 @@
 .game-layout.grid {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: repeat(2, auto);
   margin: 10px;  
 }
 
-.game-layout.grid p, h2, li, div{
+.game-layout.grid p, h2, li, div, button{
   grid-column: 2/3;
   margin: 0px;
 }
@@ -73,6 +72,7 @@
   margin-bottom: 5px;
 }
 
+
 #gameplay-photos img{
   width: 200px;
   height: 125px;;
@@ -81,6 +81,13 @@
 .demo iframe{
   display: none;
 }
+
+.section-grid {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-column: 2/3;
+}
+
 
 /* small tablet styles */
 @media screen and (min-width: 450px){
