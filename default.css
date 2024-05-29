@@ -109,10 +109,15 @@ button {
   display: flex;
   margin: auto;
   border-radius: 12px;
+  box-shadow: inset gray 0px 0px 20px -12px, 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 button:hover{
   background-color: #d9df72;
+}
+
+button:active{
+  box-shadow: inset gray 0px 0px 20px -12px;
 }
 
 iframe {
@@ -174,8 +179,12 @@ iframe {
 .container {
   background-color: #fafbfc;
   border-radius: 12px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: inset gray 0px 0px 20px -12px, 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 10px;
+}
+
+.image-depth {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media screen and (min-width: 380px){
