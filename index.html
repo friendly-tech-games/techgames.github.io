@@ -9,25 +9,19 @@
   <title>Tech Games</title>
 </head>
 <body>
-  <nav class="nav">
-    <ul class="nav">
-      <li></li>
-      <li class="dropdown">
-        <a>Games</a>
-        <div class="dropdown-content">
-          <ul class="nav">
-            <li><a href="games/siteseeing/siteseeing.html">Site Seeing</a></li>
-            <li><a href="games/databrain/databrain.html">Data Brain</a></li>
-            <li><a href="games/byteclub/byteclub.html">Byte Club</a></li>
-          </ul>
-        </div>
-      </li>
-      <li id="about_nav"><a href="about/about.html">About</a></li>
-    </ul>
-  </nav>
+  <nav class="nav grid">
+      <button type="button" class="nav collapsible">Games</button>
+      <div class="content">
+          <a href="../siteseeing/siteseeing.html">Site Seeing</a>
+          <a href="../byteclub/byteclub.html">Byte Club</a>
+          <a href="games/databrain/databrain.html">Data Brain</a>
+      </div>
+    <a id="about_link" href="../../about/about.html">About</a>
+</nav>
   <section id="intro" class="grid">
       <img src="assets/Logo.png" alt="logo image">
       <h1>TECH GAMES</h1>
+      <img src="assets/Logo.png" alt="logo image">
   </section>
   <section id="overview" class="grid">
       <p class="container">
@@ -44,5 +38,52 @@
   <section id="contact" class="grid">
     <a href="https://forms.gle/NqrMArQwegqi4Uza9" target="_blank" rel="noopener noreferrer"><button type="button">Join Email List</button></a>
   </section>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
+    <script>
+      let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
 </body>
 </html>
