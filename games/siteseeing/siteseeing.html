@@ -9,53 +9,153 @@
   <title>Site Seeing</title>
 </head>
 <body>
-    <nav class="nav">
-        <ul class="nav">
-          <li><a id="homeicon_link" href="../../index.html"><img id="homeicon" src="../../assets/home-icon.png" alt="Home Icon Image"></a></li>
-          <li class="dropdown">
-            <a>Games</a>
-            <div class="dropdown-content">
-              <ul class="nav">
-                <li><a href="../databrain/databrain.html">Data Brain</a></li>
-                <li><a href="../byteclub/byteclub.html">Byte Club</a></li>
-              </ul>
-            </div>
-          </li>
-          <li id="about_nav"><a href="../../about/about.html">About</a></li>
-        </ul>
-      </nav>
-    <section id="gamebio" class="grid">
-        <img id="gamethumbnail" class="horizontal image-depth" src="assets/Website-Thumbnail.png" alt="Site Seeing Image">
-        <table id="gameinfo" class="horizontal">
-            <tr>
-                <th class="gameinfo-img "><img src="../assets/GamePlayerCount.png" alt="Game Player Count Image"></th>
-                <th><p class="gameinfo-text">1-2</p></th>
-            </tr>
-            <tr>
-                <th class="gameinfo-img"><img src="../assets/GameTime.png" alt="Game Time Image"></th>
-                <th><p class="gameinfo-text">15 mins</p></th>
-            </tr>
-            <tr>
-                <th class="gameinfo-img"><img src="../assets/GameAge.png" alt="Game Age Image"></th>
-                <th><p class="gameinfo-text">12+</p></th>
-            </tr>
-        </table>
-    </section>
-    <section id="overview" class="game-layout grid">
-        <p id="overview" class="container">You are building a website for your travel agency. Help your customers book trips to Paris, Kyoto and Rio. <br><br> When building your website you have to consider technical and market requirements. Will your business thrive with its online presence?</p>
-    </section>
-    <section id="gameplay-photos" class="grid">
-        <img id="gameplay-1" src="assets/Gameplay-1.png" alt="Gameplay 1 Image">
-        <img id="gameplay-2" src="assets/Gameplay-2.png" alt="Gameplay 2 Image">
-        <img id="gameplay-3" src="assets/Gameplay-3.png" alt="Gameplay 3 Image">
-    </section>
-    <section class="demo">
-        <h2>Play it Now Online!</h2>
-        <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://tabletopia.com/games/site-seeing/680x340"></iframe>
-        <p>You will need a larger screen, mouse and keyboard to play</p>
-    </section>
-    <section class="buy">
-        <h2>Shop coming soon</h2>
-    </section>
+  <nav class="nav grid">
+    <a id="homeicon_link" href="../../index.html"><img id="homeicon" src="../../assets/home-icon.png" alt="Home Icon Image"></a>
+      <button type="button" class="nav collapsible">Games</button>
+      <div class="content">
+          <a href="../databrain/databrain.html">Data Brain</a>
+          <a href="../byteclub/byteclub.html">Byte Club</a>
+      </div>
+    <a id="about_link" href="../../about/about.html">About</a>
+  </nav>
+  <section class="core-info grid">
+      
+    <div id="picture-gallery" class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="assets/Game-Cover.png" alt="Site Seeing Image">
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="assets/Display-DB.png" alt="Show card layout looking nice Image">
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="assets/Rule-cards.png">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="assets/Gameplay.png">
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div id="dots-picture">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <h1>Site Seeing</h1>
+    <h2>Full Copy    : $XX.99</h2>
+    <h2>Print & Play : $XX.99</h2>
+    
+    <div class="game-stats">
+      <div class="game-stat container">
+        <img src="../assets/GamePlayerCount.png" alt="Game Player Count Image">
+        <p>1-2</p>
+      </div>
+      <div class="game-stat container">
+        <img src="../assets/GameTime.png" alt="Game Time Image">
+        <p>20 mins</p>
+      </div>
+      <div class=" game-stat container">
+        <img src="../assets/GameAge.png" alt="Game Age Image">
+        <p>13+</p>
+      </div>
+    </div>
+
+    <div class="shop container">
+      <p>Shop coming soon</p>
+    </div>
+    <div class="how-to-play container">
+      <p>How to play video coming soon</p>
+    </div>
+  </section>
+
+  <section class="overview additional-info grid">
+    <button type="button" class="collapsible">Overview</button>
+    <div class="content">
+      <p>
+        You are building a website for your travel agency. Help your customers book trips to Paris, Kyoto and Rio. </br></br>
+        When building your website you have to consider technical and market requirements. Will your business thrive with its online presents?
+      </p>
+    </div>
+  </section>
+
+  <section class="game-contents additional-info grid">
+    <button type="button" class="collapsible">Contents of the Game</button>
+    <div class="content">
+    </div>
+  </section>
+  
+<section class="game-in-reality additional-info grid">
+  <button type="button" class="collapsible">Connect the Game to Reality</button>
+  <div class="content">
+    <p>
+      Learn how a website works, but more importantly how the 3 parts of any information system interact.
+
+      Network : Connections
+      
+      Hardware : Website Cards
+      
+      Software Functionality of  each website card
+      </p>
+  </div>
+</section>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+      </script>
+      <script>
+        let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
 </body>
 </html>
