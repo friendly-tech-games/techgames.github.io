@@ -124,18 +124,10 @@ iframe {
   border-radius: 12px;
 }
 
-#homeicon {
-  grid-row: 1;
-  grid-column: 1/1;
-  width: 25px;
-}
-
-#homeicon_link {
-  padding: 5px;
-  margin: auto;
-}
-
 /*nav bar*/
+.nav {
+  background-color: #52524c;
+}
 
 .nav ul{
   list-style-type: none;
@@ -182,14 +174,14 @@ iframe {
 }
 
 /*Drop down*/
-#about_link, .collapsible {
+.collapsible {
   background-color: var(--textcolor);
   color: white;
   cursor: pointer;
-  padding: 18px;
+  padding: 15px;
   width: 100%;
   border: none;
-  text-align: left;
+  text-align: center;
   outline: none;
   border-radius: 0px;
   box-shadow: none;
@@ -197,19 +189,36 @@ iframe {
 
 #about_link {
   text-align: center;
+  grid-column: 10/11;
+  grid-row: 1;
+  width: 50px;
+  float: left;
+}
+
+#homeicon {
+  grid-row: 1;
+  width: 25px;
+  grid-column: 1/2;
+}
+
+#homeicon_link {
+  padding: 5px;
+  margin: auto;
+  grid-row: 1;
 }
 
 .active, .collapsible:hover {
   background-color: #555;
 }
 
-.nav.collapsible {
-  background-color: var(--textcolor);
-}
-
 .nav.collapsible:hover {
   background-color: var(--yellow);
   color: var(--textcolor)
+}
+
+.nav.grid {
+  display: grid;
+  grid-template-columns: repeat(1fr, 10);
 }
 
 .content a{
@@ -218,7 +227,6 @@ iframe {
 }
 
 .content {
-  padding: 0 18px;
   background-color: var(--background);
   max-height: 0;
   overflow: hidden;

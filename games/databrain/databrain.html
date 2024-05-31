@@ -9,20 +9,16 @@
   <title>Data Brain</title>
 </head>
 <body>
-    <nav class="nav">
-        <ul class="nav">
-          <li><a id="homeicon_link" href="../../index.html"><img id="homeicon" src="../../assets/home-icon.png" alt="Home Icon Image"></a></li>
-          <li>
+    <nav class="nav grid">
+          <a id="homeicon_link" href="../../index.html"><img id="homeicon" src="../../assets/home-icon.png" alt="Home Icon Image"></a>
             <button type="button" class="nav collapsible">Games</button>
             <div class="content">
                 <a href="../siteseeing/siteseeing.html">Site Seeing</a>
                 <a href="../byteclub/byteclub.html">Byte Club</a>
             </div>
-          </li>
-          <li><a id="about_link" href="../../about/about.html">About</a></li>
-        </ul>
+          <a id="about_link" href="../../about/about.html">About</a>
       </nav>
-    <section class="section-grid core-info">
+    <section class="core-info grid">
       <img class="vertical image-depth" src="../../assets/DataBrain.png" alt="Data Brain Image">
       
       <h1>Data Brain</h1>
@@ -30,59 +26,55 @@
       <h2>Print & Play : $XX.99</h2>
       
       <div class="game-stats">
-      <div class="game-stat container">
-        <img src="../assets/GamePlayerCount.png" alt="Game Player Count Image">
-        <p>2-4</p>
+        <div class="game-stat container">
+          <img src="../assets/GamePlayerCount.png" alt="Game Player Count Image">
+          <p>2-4</p>
+        </div>
+        <div class="game-stat container">
+          <img src="../assets/GameTime.png" alt="Game Time Image">
+          <p>45 mins</p>
+        </div>
+        <div class=" game-stat container">
+          <img src="../assets/GameAge.png" alt="Game Age Image">
+          <p>13+</p>
+        </div>
       </div>
-      <div class="game-stat container">
-        <img src="../assets/GameTime.png" alt="Game Time Image">
-        <p>45 mins</p>
-      </div>
-      <div class=" game-stat container">
-        <img src="../assets/GameAge.png" alt="Game Age Image">
-        <p>13+</p>
-      </div>
-    </div>
 
-      <div class="container">
-        <p>Link to Shop</p>
+      <div class="shop container">
+        <p>Shop coming soon</p>
       </div>
-      <div class="container">
-        <p>How to play video</p>
+      <div class="how-to-play container">
+        <p>How to play video coming soon</p>
       </div>
     </section>
 
-    <section class="section-grid">
+    <section class="additional-info grid">
       <button type="button" class="collapsible">Overview</button>
       <div class="content">
         <p class>You are a student working on an assignment to make a machine learning model to identify animals from a photo. Unfortunately you have procrastinated and need to pull an all nighter in order to submit your assignment before the deadline. Will you get the highest grade in the class before time runs out?</p>
       </div>
     </section>
     
-  <section class="section-grid">
-    <button type="button" class="collapsible">Learn More : Connect the game to reality</button>
+  <section class="additional-info grid">
+    <button type="button" class="collapsible">Connect the Game to Reality</button>
     <div class="content">
       <p>
         Neural networks is the most common type of model for modern AI work. ChatGPT runs on a specific type of neural network called a large language model(LLM)<br/><br/>
         They can be compared to brains as they strengthen and weaken connections between nodes given the data it receives, just like the brain modifies the connections between neurons based on the experiences you have.<br/><br/>
-        For more detail read <a href="https://medium.com/@sadafsaleem5815/neural-networks-in-10mins-simply-explained-9ec2ad9ea815">here</a><br/><br/>
+        For more detail read <a id="more-info-link" target="_blank" rel="noopener noreferrer" href="https://medium.com/@sadafsaleem5815/neural-networks-in-10mins-simply-explained-9ec2ad9ea815">here</a><br/><br/>
         Below shows how the game aligns with how it works in reality.
       </p>
       <ul>
         <li>You roll dice to determine if a model was successful, because no matter how much you train it there is still a chance it is wrong. It is a probablity machine, not guarantee list of instructions like traditional programing.</li>
-        <li>Input Layer  = An animal photo</li>
-        <li>Hidden Layer = Where you add and strengthen nodes</li>
-        <li>Output Layer = Path that connects an animal photo which is needed for a successful test</li>
+        <li><b>Input Layer</b>  = An animal photo</li>
+        <li><b>Hidden Layer</b> = Where you add and strengthen nodes</li>
+        <li><b>Output Layer</b> = Path that connects an animal photo which is needed for a successful test</li>
       </ul>
-      <div id="learn-more-images">
+      <div class="learn-more-images">
         <img src="assets/actual-neural-network.png" alt="Actual Neural Network Image">
         <img src="assets/data-brain-board.png" alt="Data Brain Image">
       </div>
     </div>
-  </section>
-
-  <section class="buy">
-    <h2>Shop coming soon</h2>
   </section>
 
 <script>
