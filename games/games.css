@@ -251,6 +251,10 @@ a#more-info-link {
 }
 
 /* The dots/bullets/indicators */
+#dots-picture {
+  margin-top: 5px;
+}
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -382,9 +386,8 @@ a#more-info-link {
     grid-column: 5/10;
   }
 
-  .additional-info img {
-    margin-left: auto;
-    display: inline;
+  .learn-more-images img {
+    display:inline;
   }
 
   .learn-more-images{
@@ -440,13 +443,13 @@ a#more-info-link {
   #picture-gallery {
     grid-row: 2/6;
     grid-column: 2/5;
-    height: 450px;
-    width: 300px;
+    height: 600px;
+    width: 400px;
   }
 
   #picture-gallery img{
-    height: 450px;
-    width: 300px;
+    height: 600px;
+    width: 400px;
   }
 
   #dots-picture {
@@ -458,6 +461,15 @@ a#more-info-link {
   .additional-info img{
     width: 400px;
     height: 400px;
+  }
+
+  .shop, .how-to-play {
+    height: 200px;
+  }
+
+  .game-stat {
+    width: 80px;
+    height: 80px;
   }
 }
 

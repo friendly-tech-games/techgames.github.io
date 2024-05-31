@@ -197,7 +197,7 @@ iframe {
 
 #homeicon {
   grid-row: 1;
-  width: 25px;
+  width: 40px;
   grid-column: 1/2;
 }
 
@@ -208,7 +208,7 @@ iframe {
 }
 
 .active, .collapsible:hover {
-  background-color: #555;
+  background-color: #555;;
 }
 
 .nav.collapsible:hover {
@@ -231,6 +231,7 @@ iframe {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  margin-bottom: 5px;
 }
 
 /*Containers*/
