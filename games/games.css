@@ -128,6 +128,11 @@ a#more-info-link {
   height : 300px;
 }
 
+#dots-picture{
+  text-align:center;
+  margin: auto;
+}
+
 
 #picture-gallery img{
   display: flex;
@@ -138,12 +143,13 @@ a#more-info-link {
 }
 
 .game-stats {
-  grid-row-start: 5; 
+  grid-row-start: 6; 
   display: grid;
 }
 
 .game-stats div {
   padding: 5px;
+  height: 60px;
 }
 
 .game-stats div:nth-child(1) {
@@ -273,7 +279,8 @@ a#more-info-link {
 
 #picture-gallery {
   display: grid;
-  width: 250px;
+  width: 200px;
+  height: 300px;
   background-color: #f2f2f2;
 }
 
@@ -328,11 +335,17 @@ a#more-info-link {
     grid-column: 5/10;
   }
 
-  .core-info.grid img{
-    grid-row: 1/7;
+  #picture-gallery {
+    grid-row: 2/6;
     grid-column: 2/5;
     margin-top: 5px;
     margin-right: 0px;
+    margin: auto;
+  }
+
+  #dots-picture {
+    grid-row: 6/7;
+    grid-column: 2/5;
     margin: auto;
   }
 
@@ -424,9 +437,28 @@ a#more-info-link {
     width: 300px;
   }
 
+  #picture-gallery {
+    grid-row: 2/6;
+    grid-column: 2/5;
+    height: 450px;
+    width: 300px;
+  }
+
+  #picture-gallery img{
+    height: 450px;
+    width: 300px;
+  }
+
+  #dots-picture {
+    grid-row: 6/7;
+    grid-column: 2/5;
+    margin: auto;
+  }
+
   .additional-info img{
     width: 400px;
     height: 400px;
+  }
 }
 
 /* desktop styles */
@@ -434,5 +466,5 @@ a#more-info-link {
   .gameinfo-img img{
     width: 60px;
     height: 60px;
-  }  
-}
+  } 
+} 
