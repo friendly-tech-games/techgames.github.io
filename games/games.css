@@ -254,12 +254,12 @@ a#more-info-link {
   
   .shop {
     grid-row-start: 5; 
-    grid-column: 6/10;   
+    grid-column: 5/10;   
   }
   
   .how-to-play {
     grid-row-start: 6; 
-    grid-column: 6/10;
+    grid-column: 5/10;
   }
 
   .additional-info img {
@@ -269,6 +269,7 @@ a#more-info-link {
 
   .learn-more-images{
     margin: auto;
+    width: fit-content;
   }
 }
 
@@ -310,6 +311,15 @@ a#more-info-link {
   #learn-more-images {
     text-align:center;
   }
+  
+  #box-art {
+    height: 450px;
+    width: 300px;
+  }
+
+  .additional-info img{
+    width: 400px;
+    height: 400px;
 }
 
 /* desktop styles */
