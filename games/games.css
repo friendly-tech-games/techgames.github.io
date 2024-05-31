@@ -51,11 +51,10 @@
 .game-layout.grid {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: repeat(2, auto);
   margin: 10px;  
 }
 
-.game-layout.grid p, h2, li, div{
+.game-layout.grid p, h2, li, div, button{
   grid-column: 2/3;
   margin: 0px;
 }
@@ -73,6 +72,7 @@
   margin-bottom: 5px;
 }
 
+
 #gameplay-photos img{
   width: 200px;
   height: 125px;;
@@ -80,6 +80,98 @@
 
 .demo iframe{
   display: none;
+}
+
+.core-info.grid {
+  display: grid;
+  grid-template-columns: repeat(1fr, 10);
+}
+
+.core-info.grid * {
+  grid-column: 2/9;
+}
+
+.additional-info img{
+  text-align:center;
+  width: 250px;
+  height: 250px;
+  border: rgb(199, 200, 201) 2px solid;
+  padding: 0px;
+  margin: 5px auto;
+}
+
+.collapsible button{
+  padding: 0px;
+}
+
+a#more-info-link {
+  display: inline-block;
+  background-color: transparent;
+  text-align: left;
+}
+
+.core-info h1{
+  grid-row: 1;
+}
+
+.core-info.grid h2{
+  margin-top: 5px;
+  text-align: center;
+  grid-column: 2/10;
+}
+
+.core-info img{
+  grid-row: 2;
+  margin: auto;
+  padding: 0px;
+  border:2px solid var(--picture-frame);
+  width : 200px;
+  height : 300px;
+}
+
+.game-stats {
+  grid-row-start: 5; 
+  display: grid;
+}
+
+.game-stats div {
+  padding: 5px;
+}
+
+.game-stats div:nth-child(1) {
+  grid-column: 2/5;
+}
+
+.game-stats div:nth-child(2) {
+  grid-column: 5/8;
+  width: 80px;
+}
+
+.game-stats div:nth-child(3) {
+  grid-column: 8/10;
+}
+
+.game-stat {
+  width: 60px;
+  height: 50px;
+}
+
+.game-stat img{
+  border: 0px;
+  width: 30px;
+  height: 30px;
+}
+
+.shop, .how-to-play {
+  height: 100px;
+}
+
+.additional-info p{
+  text-align: left;
+}
+
+.additional-info.grid {
+  margin: 5px;
 }
 
 /* small tablet styles */
@@ -127,6 +219,63 @@
 
 }
 
+@media screen and (min-width: 600px){
+
+  .core-info.grid * {
+    grid-column: 5/10;
+  }
+
+  .core-info.grid img{
+    grid-row: 1/7;
+    grid-column: 2/5;
+    margin-top: 5px;
+    margin-right: 0px;
+    margin: auto;
+  }
+
+  .core-info.grid h1{
+    text-align: left;
+    grid-column: 5/10;
+    margin-left: 5px;
+  }
+  
+  .core-info.grid h2{
+    text-align: left;
+    grid-column: 5/10;
+  }
+
+  .core-info.grid h2::nth-child(1) {
+    grid-row: 2;
+  }
+  .core-info.grid h2::nth-child(2) {
+    grid-row: 3;
+  }
+
+  .game-stats {
+    grid-row-start: 4; 
+    grid-column: 5/10;
+  }
+  
+  .shop {
+    grid-row-start: 5; 
+    grid-column: 5/10;   
+  }
+  
+  .how-to-play {
+    grid-row-start: 6; 
+    grid-column: 5/10;
+  }
+
+  .additional-info img {
+    margin-left: auto;
+    display: inline;
+  }
+
+  .learn-more-images{
+    margin: auto;
+    width: fit-content;
+  }
+}
 
 /* large tablet & laptop styles */
 @media screen and (min-width: 900px){
@@ -166,6 +315,15 @@
   #learn-more-images {
     text-align:center;
   }
+  
+  #box-art {
+    height: 450px;
+    width: 300px;
+  }
+
+  .additional-info img{
+    width: 400px;
+    height: 400px;
 }
 
 /* desktop styles */
