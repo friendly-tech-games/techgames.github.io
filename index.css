@@ -121,7 +121,9 @@ img.game:hover{
   height: 170px;
   aspect-ratio: 5;
   object-fit: cover;
-  border-radius: 10px 10px 0 0;
+  border-radius: 12px;
+  border: solid 1px grey;
+  padding: 0px;
   transform: rotate(var(--_a)) translateY(50%) rotateX(90deg) rotateY(180deg);
 }
 
