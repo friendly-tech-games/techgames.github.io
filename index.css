@@ -98,18 +98,9 @@ img.game:hover{
   height: 100px;
 }
 
-#contact.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, auto);
-}
-
-#contact p {
-  grid-row: 1;
-}
-
-#contact button {
-  grid-row: 2;
+#contact {
+  display: block;
+  margin-top: 100px;
 }
 
 .gallery {
