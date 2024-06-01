@@ -1,5 +1,6 @@
 
 
+
 /*nav screen*/
 
 #intro.grid {
@@ -111,6 +112,42 @@ img.game:hover{
   grid-row: 2;
 }
 
+.gallery {
+  --s: 110px; /* the image size */
+  
+  display: grid;
+  transform-style: preserve-3d;
+  animation: r 15s linear infinite;
+  position: relative;
+}
+@keyframes r {
+  0% {transform: perspective(200px) rotateX(-90deg) rotate(0deg)}
+  to {transform: perspective(300px) rotateX(-90deg) rotate(-360deg)}
+}
+.gallery > img {
+  grid-area: 1/1;
+  width: var(--s);
+  height: 170px;
+  aspect-ratio: 5;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transform: rotate(var(--_a)) translateY(50%) rotateX(90deg) rotateY(180deg);
+}
+
+
+.gallery > img:nth-child(1) {--_a: 0deg}
+.gallery > img:nth-child(2) {--_a: 120deg}
+.gallery > img:nth-child(3) {--_a: 240deg}
+
+.gallery img:nth-child(1){
+  width: 170px;
+  height: 110px;
+}
+
+.create-space {
+  height: 60px;
+}
+
 @media screen and (min-width: 600px){
   
   #games.grid {
@@ -134,6 +171,25 @@ img.game:hover{
 
   #contact{
     padding-bottom: 20px;
+  }
+
+  .gallery img {
+    width: 200px;
+    height: 300px;
+  }
+
+  .gallery img:nth-child(1){
+    width: 300px;
+    height: 200px;
+  }
+
+  @keyframes r {
+    0% {transform: perspective(500px) rotateX(-90deg) rotate(0deg)}
+    to {transform: perspective(600px) rotateX(-90deg) rotate(-360deg)}
+  }
+
+  .create-space {
+    height: 100px;
   }
 }
 
