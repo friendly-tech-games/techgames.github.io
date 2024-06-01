@@ -9,21 +9,116 @@
   <title>BYTE CLUB</title>
 </head>
 <body>
-    <nav class="nav">
-        <ul class="nav">
-          <li><a id="homeicon_link" href="../../index.html"><img id="homeicon" src="../../assets/home-icon.png" alt="Home Icon Image"></a></li>
-          <li class="dropdown">
-            <a>Games</a>
-            <div class="dropdown-content">
-              <ul class="nav">
-                <li><a href="../siteseeing/siteseeing.html">Site Seeing</a></li>
-                <li><a href="../databrain/databrain.html">Data Brain</a></li>
-              </ul>
-            </div>
-          </li>
-          <li id="about_nav"><a href="../../about/about.html">About</a></li>
-        </ul>
-      </nav>
+  <nav class="nav grid">
+    <a id="homeicon_link" href="../../index.html"><img id="homeicon" src="../../assets/home-icon.png" alt="Home Icon Image"></a>
+      <button type="button" class="nav collapsible">Games</button>
+      <div class="content">
+          <a href="../siteseeing/siteseeing.html">Site Seeing</a>
+          <a href="../databrain/databrain.html">Data Brain</a>
+      </div>
+    <a id="about_link" href="../../about/about.html">About</a>
+  </nav>
+  <section class="core-info grid">
+      
+    <div id="picture-gallery" class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="assets/Byte Club.png" alt="Byte Club Image">
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="assets/Core-Cards.png" alt="Core Cards Image">
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="assets/Action-Cards.png">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="assets/Hackers-face.png">
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div id="dots-picture">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <h1>Byte Club</h1>
+    <h2>Full Copy    : $XX.99</h2>
+    <h2>Print & Play : $XX.99</h2>
+    
+    <div class="game-stats">
+      <div class="game-stat container">
+        <img src="../assets/GamePlayerCount.png" alt="Game Player Count Image">
+        <p>2-5</p>
+      </div>
+      <div class="game-stat container">
+        <img src="../assets/GameTime.png" alt="Game Time Image">
+        <p>20 mins</p>
+      </div>
+      <div class=" game-stat container">
+        <img src="../assets/GameAge.png" alt="Game Age Image">
+        <p>13+</p>
+      </div>
+    </div>
+
+    <div class="shop container">
+      <p>Shop coming soon</p>
+    </div>
+    <div class="how-to-play container">
+      <p>How to play video coming soon</p>
+    </div>
+  </section>
+
+  <section class="overview additional-info grid">
+    <button type="button" class="collapsible">Overview</button>
+    <div class="content">
+      <p class>You are hackers in a cyber security capture the flag competition. Hack each others hand of cards and defend the Data Flag from the other players until the HACKED card is drawn.</p>
+    </div>
+  </section>
+
+  <section class="game-contents additional-info grid">
+    <button type="button" class="collapsible">Contents of the Game</button>
+    <div class="content">
+      <img src="assets/Component-cards.png" alt="Component Cards Image">
+    </div>
+  </section>
+  
+<section class="game-in-reality additional-info grid">
+  <button type="button" class="collapsible">Connect the Game to Reality</button>
+  <div class="content">
+    <p>
+      When most people think of cybersecurity it is a mysterious black box that constantly changes, but in reality there are common frameworks that attackers and defenders follow.
+      The cyber kill chain is a process that is executed in every successful cyber attack. The details of the attack changes, but the process is consistent.
+      Defenders/companies follow the NIST Cybersecurity framework, which essentially puts everything an organization does into 6 buckets with the goal to disrupt attacks, somewhere on there path of the cyber kill chain.
+    </p>
+    <ul>
+      <li>For more detail on the Cyber Kill Chain <a id="more-info-link" target="_blank" rel="noopener noreferrer" href="https://www.ftc.gov/business-guidance/small-businesses/cybersecurity/nist-framework">here</a>.</li>
+      <li>For more detail on the NIST Cybersecurity framework<a id="more-info-link" target="_blank" rel="noopener noreferrer" href="https://www.ftc.gov/business-guidance/small-businesses/cybersecurity/nist-framework">here</a>. 
+      Note that the govern stage is not in mentioned in the documentation, but that is only because it was recently added to the formal framework and has not made it into the abbreviiated messages yet. 
+      You can research <a id="more-info-link" target="_blank" rel="noopener noreferrer" href="https://www.nist.gov/itl/smallbusinesscyber/nist-cybersecurity-framework-0">NIST framework 2.0</a> to learn more about the govern stage.</li>
+    </ul>
+    <ul>
+      <li><b>Attack Action Cards + HACKED Card</b>  = All stages of the Cyber Kill Chain is represented</li>
+      <li><b>Defend Action Cards</b> = All stages of the NIST Cybersecurity framework is represented</li>
+    </ul>
+    <div class="learn-more-images">
+      <img src="assets/actual-neural-network.png" alt="Actual Neural Network Image">
+      <img src="assets/data-brain-board.png" alt="Data Brain Image">
+    </div>
+  </div>
+</section>
+  <!--
     <section id="gamebio" class="grid vertical">
         <img id="gamethumbnail" class="vertical image-depth" src="../../assets/Byte Club.png" alt="Byte Club Image">
         <table id="gameinfo" class="vertical">
@@ -44,15 +139,55 @@
     <section id="overview" class="grid">
         <p id="overview" class="container">You are all hackers competeing a cybersecurity capture of the flag event. Use your hacking skills to steal the treasured data and then defend it from the other hackers around the table.</p>
     </section>
-    <!--
-    <section id="gameplay-photos" class="grid">
-        <img id="gameplay-1" src="assets/Gameplay-1.png" alt="Gameplay 1 Image">
-        <img id="gameplay-2" src="assets/Gameplay-2.png" alt="Gameplay 2 Image">
-        <img id="gameplay-3" src="assets/Gameplay-3.png" alt="Gameplay 3 Image">
-    </section>
-    -->
     <section class="buy">
         <h2>Shop coming soon</h2>
     </section>
+    -->
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+      </script>
+      <script>
+        let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+      </script>    
 </body>
 </html>
