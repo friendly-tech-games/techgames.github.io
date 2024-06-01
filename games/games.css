@@ -289,6 +289,10 @@ a#more-info-link {
   background-color: #f2f2f2;
 }
 
+.mySlides img {
+  border: solid 1px gray;
+}
+
 /* small tablet styles */
 @media screen and (min-width: 450px){
   #gameplay-photos.grid {

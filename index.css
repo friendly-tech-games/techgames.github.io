@@ -52,6 +52,12 @@
   }
 }
 
+.gallery img {
+  border: solid 1px grey;
+  padding: 0px;
+  border-radius: 12px;
+}
+
 #intro.grid h1{
   grid-column: 2 / 5;
   grid-row: 1;
