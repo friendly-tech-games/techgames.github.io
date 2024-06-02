@@ -177,12 +177,17 @@ body{
 h1, h2{
   color: var(--textcolor);
   font-weight: normal;
-  line-height: 24px;
+  line-height: 1;
   padding: 5px;
   text-align: center;
 }
+h2 {
+  font-size: 1.5rem;
+}
+
 h1 {
-  font-size: 32px;
+  font-size: 2rem;
+
 }
 
 p, li{
@@ -195,7 +200,7 @@ p {
 }
 
 a, p, button, li {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 img{
@@ -252,7 +257,8 @@ iframe {
 .nav a{
   color: var(--background);
   text-decoration: none;
-  padding: 15px;
+  padding: 10px;
+  margin: auto;
   display: block;
   text-align: center;
 }
@@ -290,7 +296,8 @@ iframe {
   background-color: var(--textcolor);
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 15px 10px;
+  margin: auto;
   width: 100%;
   border: none;
   text-align: center;
@@ -303,7 +310,7 @@ iframe {
   text-align: center;
   grid-column: 10/11;
   grid-row: 1;
-  width: 50px;
+  width: 80px;
   float: left;
 }
 
@@ -343,7 +350,11 @@ iframe {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  margin-bottom: 5px;
+  margin-bottom: 5px ;
+}
+
+.content.homepage {
+  margin-top: 5px;
 }
 
 .nav.grid .content {
