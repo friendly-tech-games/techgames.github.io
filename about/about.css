@@ -1,7 +1,4 @@
-#nav.grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
+
 
 #bio.grid {
     display: grid;
@@ -27,56 +24,19 @@
     font-weight: bold;
 }
 
-#email{
-    font-size: 0.8em;
-}
 
 #story {
     grid-row: 3;
     grid-column: 2/7;
+    padding: 10px 0px;
 }
 
-@media screen and (min-width: 450px) {
-    #personal-photo {
-        grid-column: 2/5;
-    }
-    
-    #contacts {
-        grid-row: 1;
-        grid-column: 5/7;
-        margin: auto;
-    }
-
-    #email{
-        font-size: 0.5em;
-    }
+#story p{
+    text-align: left;
 }
 
 @media screen and (min-width: 600px) {
     #personal-photo {
-        width: 300px;
-    }
-
-    #contact-title{
-        font-size: 1em;
-    }
-
-    #email{
-        font-size: 0.7em;
-    }
-}
-
-@media screen and (min-width: 750px) {
-    #personal-photo {
-        width: 300px;
-        margin-right: 0;
-    }
-
-    #contacts {
-        margin-left: 0;
-    }
-
-    #contact-title, #email{
-        font-size: 1em;
+        width: 225px;
     }
 }
