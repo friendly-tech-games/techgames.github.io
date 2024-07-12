@@ -32,6 +32,7 @@
 
 #overview.grid p{
   grid-column: 2/3;
+  padding: 15px;
 }
 
 @keyframes rotation-left {
