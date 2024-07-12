@@ -176,8 +176,17 @@ a#more-info-link {
   height: 30px;
 }
 
-.shop, .how-to-play {
+.how-to-play {
   height: 100px;
+}
+
+.shop {
+  height: 180px;
+}
+
+.shop button{
+  margin: 5px auto;
+  width: 250px;
 }
 
 .additional-info p{
@@ -357,37 +366,26 @@ a#more-info-link {
     grid-column: 2/5;
     margin: auto;
   }
-
+  
   .core-info.grid h1{
-    text-align: left;
-    grid-column: 5/10;
-    margin-left: 5px;
+    text-align: center;
+    grid-row-start: 1;
+    grid-column: 1/10
   }
   
-  .core-info.grid h2{
-    text-align: left;
-    grid-column: 5/10;
-  }
-
-  .core-info.grid h2::nth-child(1) {
-    grid-row: 2;
-  }
-  .core-info.grid h2::nth-child(2) {
-    grid-row: 3;
-  }
-
   .game-stats {
-    grid-row-start: 4; 
+    grid-row-start: 2; 
     grid-column: 5/10;
   }
   
   .shop {
-    grid-row-start: 5; 
+    grid-row: 3; 
     grid-column: 5/10;   
   }
+
   
   .how-to-play {
-    grid-row-start: 6; 
+    grid-row-start: 4; 
     grid-column: 5/10;
   }
 
@@ -440,40 +438,6 @@ a#more-info-link {
     text-align:center;
   }
 
-  /*
-  #box-art {
-    height: 450px;
-    width: 300px;
-  }
-
-  #picture-gallery {
-    grid-row: 2/6;
-    grid-column: 2/5;
-    height: 600px;
-    width: 400px;
-  }
-
-  #picture-gallery img{
-    height: 600px;
-    width: 400px;
-  }
-
-  #dots-picture {
-    grid-row: 6/7;
-    grid-column: 2/5;
-    margin: auto;
-  }
-
-  .additional-info img{
-    width: 400px;
-    height: 400px;
-  }
-
-  .shop, .how-to-play {
-    height: 200px;
-  }
-
-  */
   #picture-gallery {
     grid-row: 1/6;
     grid-column: 2/5;
@@ -489,6 +453,12 @@ a#more-info-link {
 
   #dots-picture {
     margin-top: 5px;
+  }
+
+  .core-info.grid h1{
+    text-align: left;
+    margin-left: 5px;
+    grid-column: 5/10;
   }
 
   .core-info.grid h2:nth-of-type(1) {
