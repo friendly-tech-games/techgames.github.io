@@ -302,6 +302,11 @@ a#more-info-link {
   border: solid 1px gray;
 }
 
+.sell-sheet img{
+  width: 300px;
+  height: 210px;
+}
+
 /* small tablet styles */
 @media screen and (min-width: 450px){
   #gameplay-photos.grid {
@@ -343,6 +348,11 @@ a#more-info-link {
   .game-layout img {
     width:300px;
     height: 300px;
+  }
+
+  .sell-sheet img{
+    width: 450px;
+    height: 315px;
   }
 
 }
@@ -396,6 +406,11 @@ a#more-info-link {
   .learn-more-images{
     margin: auto;
     width: fit-content;
+  }
+
+  .sell-sheet img{
+    width: 600px;
+    height: 420px;
   }
 }
 
@@ -486,6 +501,11 @@ a#more-info-link {
   .game-stat {
     width: 80px;
     height: 80px;
+  }
+
+  .sell-sheet img{
+    width: 900px;
+    height: 630px;
   }
 }
 
