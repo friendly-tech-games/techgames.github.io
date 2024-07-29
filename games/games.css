@@ -177,7 +177,12 @@ a#more-info-link {
 }
 
 .how-to-play {
-  height: 100px;
+  height: 200px;
+}
+
+.how-to-play iframe{
+  margin: auto;
+  display: block;
 }
 
 .shop {
@@ -364,7 +369,7 @@ a#more-info-link {
   }
 
   #picture-gallery {
-    grid-row: 2/6;
+    grid-row: 1/5;
     grid-column: 2/5;
     margin-top: 5px;
     margin-right: 0px;
@@ -372,7 +377,7 @@ a#more-info-link {
   }
 
   #dots-picture {
-    grid-row: 6/7;
+    grid-row: 4/5;
     grid-column: 2/5;
     margin: auto;
   }
@@ -467,7 +472,8 @@ a#more-info-link {
   }
 
   #dots-picture {
-    margin-top: 5px;
+    grid-row: 5/5;
+    margin-top: 100px;
   }
 
   .core-info.grid h1{
