@@ -521,4 +521,13 @@ a#more-info-link {
     width: 60px;
     height: 60px;
   } 
+
+  .shop.container {
+    grid-column: 5/9;
+  }
+
+  .how-to-play.container {
+    grid-column: 5/9;
+  }
+
 } 
