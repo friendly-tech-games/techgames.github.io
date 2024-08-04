@@ -1,85 +1,6 @@
-#gamebio.grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, auto);
-}
-
-#title {
-  grid-row: 2;
-  grid-column: 4/5;
-  margin: 0px;
-  font-size: 1em;
-}
-
-#gamethumbnail {
-  grid-row: 2;
-  grid-column: 2/4;
-  width: 100%;
-  padding: 0px;
-  margin: 5px;
-  border:2px solid var(--picture-frame);
-}
-
-#gamethumbnail.horizontal {
-  grid-column: 2/5;
-  max-width: 300px;
-  margin: auto;
-}
-
-#gameinfo.horizontal {
-  grid-row: 3;
-  grid-column: 2/5;
-  max-width: 300px;
-  margin: auto;
-}
-
-#gameinfo {
-  grid-row: 2;
-  grid-column: 4/5;
-}
-
-.gameinfo-img img{
-  width: 30px;
-  height: 30px;
-  margin-right: 0;
-}
-
-.gameinfo-text{
-  text-align: left;
-}
-
-.game-layout.grid {
-  display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-  margin: 10px;  
-}
-
 .game-layout.grid p, h2, li, div, button{
   grid-column: 2/3;
   margin: 0px;
-}
-
-.game-layout li {
-  margin-left: 30px; 
-  list-style-type:circle;
-}
-
-.game-layout img {
-  width:160px;
-  height: 160px;
-  border:2px solid var(--picture-frame);
-  padding: 0px;
-  margin-bottom: 5px;
-}
-
-
-#gameplay-photos img{
-  width: 200px;
-  height: 125px;;
-}
-
-.demo iframe{
-  display: none;
 }
 
 .core-info.grid {
@@ -98,10 +19,6 @@
   border: rgb(199, 200, 201) 2px solid;
   padding: 0px;
   margin: 5px auto;
-}
-
-.collapsible button{
-  padding: 0px;
 }
 
 a#more-info-link {
@@ -245,26 +162,6 @@ a#more-info-link {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 /* The dots/bullets/indicators */
 #dots-picture {
   margin-top: 5px;
@@ -314,52 +211,10 @@ a#more-info-link {
 
 /* small tablet styles */
 @media screen and (min-width: 450px){
-  #gameplay-photos.grid {
-    display: grid;
-    grid-template-columns: 1fr 4fr 4fr 1fr;
-    grid-template-rows: repeat(2, auto);    
-  }
-
-  #gameinfo {
-    padding-left: 1em;
-  }
-
-  #gameplay-1 {
-    grid-row: 1;
-    grid-column: 2/3;
-    width: 100%;   
-  }
-
-  #gameplay-2 {
-    grid-row: 1;
-    grid-column: 3/4;  
-    width: 100%;  
-  }
-
-  #gameplay-3 {
-    grid-row: 2;
-    grid-column: 2/4;  
-    width: 50%; 
-    margin: auto;
-  }
-
-
-
-  .gameinfo-img img{
-    width: 40px;
-    height: 40px;
-  }
-
-  .game-layout img {
-    width:300px;
-    height: 300px;
-  }
-
   .sell-sheet img{
     width: 450px;
     height: 315px;
   }
-
 }
 
 @media screen and (min-width: 600px){
@@ -422,42 +277,6 @@ a#more-info-link {
 /* large tablet & laptop styles */
 @media screen and (min-width: 900px){
 
-  #gamethumbnail {
-    max-width: 350px;
-    margin: auto;
-    margin-top: 5px;
-    margin-right: 0;
-  }
-
-  #gamethumbnail.horizontal {
-    max-width: 450px;
-    margin: auto;
-  }
-
-  #gameplay-photos img{
-    width: 300px;
-    height: 200px;
-  }
-
-  .demo iframe{
-    display: block;
-    width: 680;
-    height: 340;
-    margin: auto;
-  }
-
-  .demo p{
-    display: none;
-  }
-
-  .game-layout img {
-    display: inline-block;
-  }
-
-  #learn-more-images {
-    text-align:center;
-  }
-
   #picture-gallery {
     grid-row: 1/6;
     grid-column: 2/5;
@@ -487,11 +306,6 @@ a#more-info-link {
     grid-column: 5/8;
   }
 
-  .core-info.grid h2:nth-of-type(2) {
-    grid-row: 2;
-    grid-column: 8/11;
-  }
-
   .game-stats {
     grid-row: 3;
   }
@@ -517,10 +331,6 @@ a#more-info-link {
 
 /* desktop styles */
 @media screen and (min-width: 1050px){
-  .gameinfo-img img{
-    width: 60px;
-    height: 60px;
-  } 
 
   .shop.container {
     grid-column: 5/9;
