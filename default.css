@@ -162,10 +162,6 @@ li{
 
 /* base styles */
 @font-face {
-  font-family:"meccano";
-  src: url("assets/fonts/Meccano Font.ttf") format("truetype");
-}
-@font-face {
   font-family:"oxanium";
   src: url("assets/fonts/Oxanium-Regular.ttf") format("truetype");
 }
