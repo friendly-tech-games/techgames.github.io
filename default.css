@@ -250,13 +250,16 @@ iframe {
   overflow: hidden;
 }
 
-.nav a{
-  color: var(--background);
+a{
+  text-align: center;
   text-decoration: none;
   padding: 10px;
   margin: auto;
   display: block;
-  text-align: center;
+}
+
+.nav a{
+  color: var(--background);
 }
 
 .nav a:hover{
