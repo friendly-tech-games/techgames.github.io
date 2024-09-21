@@ -60,7 +60,7 @@ a#more-info-link {
 }
 
 .game-stats {
-  grid-row-start: 6; 
+  grid-row-start: 4; 
   display: grid;
 }
 
@@ -94,7 +94,7 @@ a#more-info-link {
 }
 
 .how-to-play {
-  height: 200px;
+  height: 280px;
 }
 
 .how-to-play iframe{
@@ -103,12 +103,17 @@ a#more-info-link {
 }
 
 .shop {
-  height: 180px;
+  height: 120px;
 }
 
 .shop button{
   margin: 5px auto;
-  width: 250px;
+  text-align: center;
+}
+
+.how-to-play button{
+  margin: 5px auto;
+  text-align: center;
 }
 
 .additional-info p{
@@ -117,7 +122,6 @@ a#more-info-link {
 
 .additional-info.grid {
   margin: 5px;
-  
 }
 
 /*image carousel */
@@ -240,6 +244,7 @@ a#more-info-link {
     grid-row: 4/5;
     grid-column: 2/5;
     margin: auto;
+    margin-bottom: 120px;
   }
   
   .core-info.grid h1{
@@ -288,7 +293,7 @@ a#more-info-link {
 @media screen and (min-width: 900px){
 
   #picture-gallery {
-    grid-row: 1/6;
+    grid-row: 2/7;
     grid-column: 2/5;
     height: 450px;
     width: 300px;
@@ -302,13 +307,12 @@ a#more-info-link {
 
   #dots-picture {
     grid-row: 5/5;
-    margin-top: 100px;
+    margin-bottom: 30px;
   }
 
   .core-info.grid h1{
-    text-align: left;
-    margin-left: 5px;
-    grid-column: 5/10;
+    text-align: center;
+    grid-column: 1/10;
   }
 
   .core-info.grid h2:nth-of-type(1) {
