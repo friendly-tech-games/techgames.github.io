@@ -293,7 +293,7 @@ a#more-info-link {
 @media screen and (min-width: 900px){
 
   #picture-gallery {
-    grid-row: 1/6;
+    grid-row: 2/7;
     grid-column: 2/5;
     height: 450px;
     width: 300px;
@@ -307,12 +307,12 @@ a#more-info-link {
 
   #dots-picture {
     grid-row: 5/5;
+    margin-bottom: 30px;
   }
 
   .core-info.grid h1{
-    text-align: left;
-    margin-left: 5px;
-    grid-column: 5/10;
+    text-align: center;
+    grid-column: 1/10;
   }
 
   .core-info.grid h2:nth-of-type(1) {
